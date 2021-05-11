@@ -1,6 +1,6 @@
-Projet 5 du parcours DevWeb :
+Projet 5 du parcours DevWeb OpenClassrooms
 
-  Scénario :
+  Scénario
 
     Félicitations ! Vous avez été recruté en tant que développeur front-end par Orinoco, une entreprise de commerce en ligne. 
     Son credo ? Se démarquer des grands site e-commerce comme Amazon en créant des applications thématiques ne vendant qu’un seul groupe de produits. 
@@ -12,7 +12,9 @@ Projet 5 du parcours DevWeb :
     
     L’équipe est constituée de Jeanne, développeuse back-end travaillant sur les API et vous, pour la partie front-end.
 
-  L’application web sera composée de 4 pages :
+  Architecture générale
+
+    L’application web sera composée de 4 pages :
 
     ● une page de vue sous forme de liste, montrant tous les articles disponibles à la vente ;
     ● une page “produit”, qui affiche de manière dynamique l'élément sélectionné par l'utilisateur 
