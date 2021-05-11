@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="w3-top w3-bar w3-large w3-black w3-opacity-min">
+        <a href="home.html" class="w3-bar-item w3-button">HOME</a>
+        <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+        <a href="#contact" class="w3-bar-item w3-button">CONTACT</a>
+        <a href="cart.html" class="w3-bar-item w3-button w3-right">PANIER</a>
+      </nav>
+    </header>
+
+    <main id="product-page" class="w3-container">
+      <h1 class="w3-col w3-black w3-center"></h1>
+      <div class="w3-half w3-margin-top">
+        <div class="w3-display-container w3-grayscale-min">
+          <div class="w3-content">
+            <div id="product" class="w3-content">
+              <div class="w3-container w3-cell">
+                <!-- Ici, on insère Img Product -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w3-half w3-margin-top">
+        <span id="price" class="w3-col w3-center w3-xxlarge"></span>
+        <div class="w3-border" >
+          <p id="description" class="w3-center"></p>
+          <p id="lenses"></p>
+          <form id="productForm" method="POST">
+            <input type="hidden" name="product" value="" />
+            <input type="hidden" name="price" value="" />
+            <input type="hidden" name="title" value="" />
+            <select class="w3-select w3-border w3-half" name="lenses">
+              <option value="" disabled selected>Choisir une option</option>
+            </select>
+            <!-- Ici on utilise l'attribut onclik qu'on relie à la fonction js saveProduct -->
+            <button class="w3-button w3-orange w3-right w3-half w3-border" onclick="saveProduct()">Ajouter au panier</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <script src="src/config.js"></script>
+    <script src="src/product.js"></script>
+    <script src="src/functions.js"></script>
+
+    <footer>
+      <div class="w3-display w3-margin-bottom">
+        <span class="w3-tag w3-large w3-right">Orinoco, le spécialiste de l'appareil photo</span>
+      </div>
+    </footer>
+  </body>
+</html>
