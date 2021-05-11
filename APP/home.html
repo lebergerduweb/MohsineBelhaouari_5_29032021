@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Orinoco</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="w3-top w3-bar w3-large w3-black w3-opacity-min">
+        <a href="#home" class="w3-bar-item w3-button">HOME</a>
+        <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+        <a href="#contact" class="w3-bar-item w3-button">CONTACT</a>
+        <a href="cart.html" class="w3-bar-item w3-button w3-right">PANIER</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- background Img -->
+      <div
+        style="
+          height: 100vh;
+          background-image: url('img/logo.png');
+          background-size: cover auto;
+        "
+        class="w3-display-container w3-grayscale-min"
+      >
+      <div id="list" class="w3-display-left w3-xlarge w3-ul w3-orange">
+        <!-- Ici on injecte la liste des produits -->
+      </div>
+      <script src="src/config.js"></script>
+      <script src="src/home.js"></script>
+    </main>
+
+    <footer>
+      <div class="w3-display w3-bottom">
+        <span class="w3-tag w3-large w3-right">Orinoco, le spécialiste de l'appareil photo</span>
+      </div>
+    </footer>
+  </body>
+</html>

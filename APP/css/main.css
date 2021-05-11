@@ -1,0 +1,33 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Amatic SC", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#product-page {
+  margin: 20px;
+}
+
+#cart-page {
+  margin: 20px;
+}
+
+#product-page, #cart-page {
+  margin-top: 100px;
+}
+
+#total-price {
+  font-weight: bold;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Panier</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="w3-top w3-bar w3-large w3-black w3-opacity-min">
+        <a href="home.html" class="w3-bar-item w3-button">HOME</a>
+        <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+        <a href="#contact" class="w3-bar-item w3-button">CONTACT</a>
+        <a href="#cart" class="w3-bar-item w3-button w3-right">PANIER</a>
+      </nav>
+    </header>
+
+    <main id="cart-page">
+      <!-- Header image -->
+      <div class="w3-display-container w3-grayscale-min">
+        <div class="w3-content">
+          <h1>VOTRE PANIER</h1>
+          <div id="order-status">
+            <!-- Ici on inject la validation de la commande -->
+          </div>
+          <div id="cart"> 
+            <div class="w3-content">
+              <div class="w3-container w3-border">
+                <table id="list" class="w3-table w3-striped w3-bordered">
+                  <!-- Ici on inject la fonction displayProductsCart -->
+                </table>
+                <div id="total-price" class="w3-right w3-large">
+                  <!-- Ici on inject le prix total -->
+                </div>
+              </div>
+            </div>
+            <div class="w3-content w3-margin-top">
+              <div class="w3-container w3-border">
+                <form>
+                  <p><input class="w3-input w3-padding-16 w3-border w3-half w3-margin-bottom" type="text" placeholder="NOM" required name="lastName"></p>
+                  <p><input class="w3-input w3-padding-16 w3-border w3-half w3-margin-bottom" type="text" placeholder="PRENOM" required name="firstName"></p>
+                  <p><input class="w3-input w3-padding-16 w3-border" type="email" placeholder="EMAIL" required name="email"></p>
+                  <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="ADRESSE" required name="address"></p>
+                  <p><input class="w3-input w3-padding-16 w3-border w3-half w3-margin-bottom" type="number" placeholder="CODE POSTAL"></p>
+                  <p><input class="w3-input w3-padding-16 w3-border w3-half w3-margin-bottom" type="text" placeholder="VILLE" required name="city"></p>
+                  <p><button class="w3-button w3-light-grey w3-block" type="submit">VALIDER VOTRE COMMANDE</button></p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="src/config.js"></script>
+    <script src="src/cart.js"></script>
+    <script src="src/order.js"></script>
+    <script src="src/functions.js"></script>
+
+    <footer></footer>
+  </body>
+</html>
