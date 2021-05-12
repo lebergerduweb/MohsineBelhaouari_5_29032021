@@ -1,0 +1,13 @@
+INSTALLATION DU PROJET EN LOCAL
+
+1 - Cloner le dépot git 
+
+3 - Acceder au dossier API via son terminal
+
+4 - Exécutez npm install
+
+5- Exécutez node server
+
+4 - Acceder au dossier APP
+
+5 - Ouvrir home.html sur votre navigateur
