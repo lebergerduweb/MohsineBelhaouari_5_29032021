@@ -57,5 +57,7 @@ function productsOrder()
 
 
 // Fonction globale de converteur de prix
-function priceConverter(price, currency = null) {
-    return price / 100 + ' ' + currency;}
+function priceConverter(price, currency = null) 
+{
+  return price / 100 + ' ' + currency;
+}

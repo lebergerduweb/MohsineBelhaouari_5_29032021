@@ -25,14 +25,14 @@ function validateTheOrder(e)
     };
     if (products.length > 0) { 
        fetch(url + '/order', 
-        {
+        { 
             method: "POST",
             headers:  
             {
             'Accept': 'application/json', 
             'Content-Type': 'application/json'
             },
-            body: JSON.stringify(obj)
+            body: JSON.stringify(obj) 
         })
         .then(function(res) 
         {
@@ -40,12 +40,13 @@ function validateTheOrder(e)
             {
             return res.json()
             }
-        })
+        }) 
         .then(function(res) 
         {
             let totalPrice = null;
 
-            for (let product of res.products) {
+            for (let product of res.products) 
+            {
                 totalPrice += product.price;
             }
 
