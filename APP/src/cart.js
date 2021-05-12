@@ -20,7 +20,7 @@ function displayProductsCart()
         {
             productId = localStorage.key(i);
             list += '<tr><td>' + JSON.parse(localStorage.getItem(productId)).title + '</td><td>' 
-                + JSON.parse(localStorage.getItem(productId)).price / 100 + ' €</td><td>' +
+                + priceConverter(JSON.parse(localStorage.getItem(productId)).price, "€") + '</td><td>' +
                 '<form class="w3-right-align">' +
                     '<input type="hidden" name="productId" value="' + productId + '">' +
                     '<input type="button" value="Supprimer" onclick="removeProductCart(this.parentElement)" />' +
@@ -51,9 +51,9 @@ function displayTotalPriceCart()
     {
         let id = localStorage.key(i);
         let price = JSON.parse(localStorage.getItem(id)).price;
-        totalPrice += priceConverter(price);
+        totalPrice += parseInt(price);
     }
     document
         .getElementById("total-price")
-        .innerHTML = "Prix total : " + totalPrice + " €"; 
+        .innerHTML = "Prix total : " + priceConverter(totalPrice, '€'); 
 }
