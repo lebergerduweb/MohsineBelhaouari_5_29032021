@@ -23,7 +23,7 @@ function validateTheOrder(e)
         },
         "products": products
     };
-    if (products.length > 0) {
+    if (products.length > 0) { 
        fetch(url + '/order', 
         {
             method: "POST",
@@ -43,9 +43,17 @@ function validateTheOrder(e)
         })
         .then(function(res) 
         {
-        document
-            .getElementById("order-status")
-            .innerText = "order Id : " + res.orderId;
+            let totalPrice = null;
+
+            for (let product of res.products) {
+                totalPrice += product.price;
+            }
+
+            document
+                .getElementById("order-status")
+                .innerHTML = '<div class="w3-panel w3-green" id="order-status">' + 
+                '<h3>Félicitation!</h3><p>Votre commande a bien été validée !</p>' + 
+                '<p>Voici votre numéro de commande : ' + res.orderId +' </p><p>Montant réglé : ' + priceConverter(totalPrice, '€') +' </p></div>';
 
             localStorage.clear()
             displayProductsCart()

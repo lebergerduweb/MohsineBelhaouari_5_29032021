@@ -16,7 +16,7 @@ function displayOneProduct(response)
   h1Elt.innerText = response.name;
   imgElt.innerHTML = '<img src="' + response.imageUrl + '" class="w3-border w3-padding" style="width: 100%;" alt="" />';
   descriptionElt.innerText = response.description;
-  priceElt.innerText = priceConverter(response.price);
+  priceElt.innerText = priceConverter(response.price, "€");
   
   for (let i in response.lenses) 
   {
@@ -46,11 +46,16 @@ function saveProduct()
 // Ici on gere l'envoi des produits à la validation de la commande
 function productsOrder() 
 {
-    let products = []; 
+  let products = []; 
 
-    for (let product of products) 
-    {
-        products.push(localStorage.key(i));   
-    }   
-    return products;
+  for (let i = 0; i < localStorage.length; i++) 
+  {
+    products.push(localStorage.key(i));  
+  }    
+  return products;
 }
+
+
+// Fonction globale de converteur de prix
+function priceConverter(price, currency = null) {
+    return price / 100 + ' ' + currency;}
