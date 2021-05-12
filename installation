@@ -1,5 +1,11 @@
 INSTALLATION DU PROJET EN LOCAL
 
+### Conditions préalables ###
+
+Vous devrez avoir Node, `npm` installés localement sur votre machine et VSCode.
+
+### Installation ###
+
 1 - Cloner le dépot git 
 
 3 - Acceder au dossier API via son terminal
@@ -10,4 +16,6 @@ INSTALLATION DU PROJET EN LOCAL
 
 4 - Acceder au dossier APP
 
-5 - Ouvrir home.html sur votre navigateur
+5 - Ouvrir home.html sur votre navigateur vec Live Server !
+
+
