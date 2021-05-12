@@ -31,6 +31,7 @@ displayProductPage()
 // Gestion du formulaire d'ajout au pannier
 const form = document.getElementById("productForm");
 // ici on prend en charge l'evenement submit
-form.addEventListener('submit', function(e) {
+form.addEventListener('submit', function(e) 
+{
   e.preventDefault();
 });

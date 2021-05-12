@@ -23,7 +23,8 @@ function validateTheOrder(e)
         },
         "products": products
     };
-    if (products.length > 0) { 
+    if (products.length > 0) 
+    { 
        fetch(url + '/order', 
         {
             method: "POST",
@@ -63,7 +64,8 @@ function validateTheOrder(e)
         {
             console.log(err)
         }); 
-    } else {
+    } else 
+    {
        document.getElementById("order-status").innerText = "Attention votre panier est vide"
     }
 }
